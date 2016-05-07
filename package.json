@@ -1,0 +1,33 @@
+{
+  "name": "request-promise-any",
+  "version": "0.0.0",
+  "description": "The simplified HTTP request client 'request' with Promise support. Powered by 'any-promise'.",
+  "keywords": [
+    "xhr",
+    "http",
+    "https",
+    "promise",
+    "request",
+    "then",
+    "thenable",
+    "any",
+    "any-promise"
+  ],
+  "main": "./lib/rp.js",
+  "scripts": {
+    "test": "./node_modules/.bin/gulp ci"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/request/request-promise-any.git"
+  },
+  "author": "Nicolai Kamenzky (https://github.com/analog-nico)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/request/request-promise-any/issues"
+  },
+  "homepage": "https://github.com/request/request-promise-any#readme",
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
