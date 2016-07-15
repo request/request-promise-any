@@ -10,7 +10,40 @@
 [![Dependency Status](https://img.shields.io/gemnasium/request/request-promise-any.svg?style=flat-square)](https://gemnasium.com/github.com/request/request-promise-any)
 [![Known Vulnerabilities](https://snyk.io/test/npm/request-promise-any/badge.svg?style=flat-square)](https://snyk.io/test/npm/request-promise-any)
 
-This package will shortly become a package similar to [`request-promise`](https://www.npmjs.com/package/request-promise) but will use [`any-promise`](https://www.npmjs.com/package/any-promise).
+This package is similar to [`request-promise`](https://www.npmjs.com/package/request-promise) but uses [`any-promise`](https://www.npmjs.com/package/any-promise) to let the user choose which Promise library to use.
+
+Please refer to the [`request-promise` documentation](https://www.npmjs.com/package/request-promise). Everything applies to `request-promise-any` except the following:
+- Instead of using Bluebird promises this library uses the Promise library chosen by the user.
+- This library has to work with the API that all supported Promise libraries have in common. And that is the API of native ES6 promises. Mind that they have less features than Bluebird promises. In particular, the `.finally(...)` method is not available.
+
+## Installation
+
+This module is installed via npm:
+
+```
+npm install --save request
+npm install --save request-promise-native
+```
+
+`request` is defined as a peer-dependency and thus has to be installed separately.
+
+## Registering Your Preferred Promise Library
+
+First, install your preferred Promise library. E.g. [Q](https://www.npmjs.com/package/q):
+
+```
+npm install --save q
+```
+
+Then, register the Promise library before you require `request-promise-any` for the first time:
+
+``` js
+require('any-promise/register/q')
+
+var rp = require('request-promise-any')
+```
+
+For a list of supported Promise libraries and advanced registration features read the [documentation of `any-promise`](https://github.com/kevinbeaty/any-promise).
 
 ## Contributing
 
