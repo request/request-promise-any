@@ -45,6 +45,13 @@ var rp = require('request-promise-any')
 
 For a list of supported Promise libraries and advanced registration features read the [documentation of `any-promise`](https://github.com/kevinbeaty/any-promise).
 
+## Migration from `request-promise` to `request-promise-any`
+
+1. Go through the [migration instructions](https://github.com/request/request-promise#migration-from-v3-to-v4) to upgrade to `request-promise` v4.
+2. Ensure that you don't use Bluebird-specific features on the promise returned by your request calls. In particular, you can't use `.finally(...)` anymore.
+3. Follow the registration instructions above.
+4. You are done.
+
 ## Contributing
 
 To set up your development environment:
