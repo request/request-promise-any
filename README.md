@@ -27,6 +27,8 @@ npm install --save request-promise-native
 
 `request` is defined as a peer-dependency and thus has to be installed separately.
 
+**Note for NPM proxy users:** `request-promise-any` depends on `@request/promise-core` and downloading such [scoped packages](https://www.npmjs.org/doc/misc/npm-scope.html) seems to be a bit of a challenge for NPM proxies like [`sinopia`](https://github.com/rlidwka/sinopia) or [Artifactory](https://www.jfrog.com/artifactory/). If your `npm install` results in a 404 please read [this issue](https://github.com/request/request-promise/issues/137).
+
 ## Registering Your Preferred Promise Library
 
 First, install your preferred Promise library. E.g. [Q](https://www.npmjs.com/package/q):
