@@ -22,7 +22,7 @@ This module is installed via npm:
 
 ```
 npm install --save request
-npm install --save request-promise-native
+npm install --save request-promise-any
 ```
 
 `request` is defined as a peer-dependency and thus has to be installed separately.
