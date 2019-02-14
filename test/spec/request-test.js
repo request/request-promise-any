@@ -150,7 +150,7 @@ describe('Request-Promise-Any', function () {
         var cookiejar = rp.jar();
 
         expect(function () {
-            cookiejar.setCookie(sessionCookie, 'https://api.mydomain.com');
+            cookiejar.setCookie(sessionCookie.toString(), 'https://api.mydomain.com');
         }).to.not.throw();
 
     });
