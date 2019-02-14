@@ -1,6 +1,6 @@
 {
   "name": "request-promise-any",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "The simplified HTTP request client 'request' with Promise support. Powered by 'any-promise'.",
   "keywords": [
     "xhr",
