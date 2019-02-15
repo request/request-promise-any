@@ -68,6 +68,10 @@ If you want to debug a test you should use `gulp test-without-coverage` to run a
 
 ## Change History
 
+- v1.0.7 (2019-02-14)
+    - Corrected mistakenly set `tough-cookie` version, now `^2.3.3`
+      *(Thanks to @evocateur for pointing this out.)*
+    - If you installed `request-promise-any@1.0.6` please make sure after the upgrade that `request` and `request-promise-any` use the same physical copy of `tough-cookie`.
 - v1.0.6 (2019-02-14)
     - Using stricter `tough-cookie@~2.3.3` to avoid installing `tough-cookie@3` which introduces breaking changes
     - Security fix: bumped `lodash` to `^4.17.11`, see [vulnerabilty reports](https://snyk.io/vuln/search?q=lodash&type=npm)
