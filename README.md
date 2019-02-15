@@ -70,6 +70,7 @@ If you want to debug a test you should use `gulp test-without-coverage` to run a
 
 - v1.0.6 (2019-02-14)
     - Using stricter `tough-cookie@~2.3.3` to avoid installing `tough-cookie@3` which introduces breaking changes
+    - Security fix: bumped `lodash` to `^4.17.11`, see [vulnerabilty reports](https://snyk.io/vuln/search?q=lodash&type=npm)
 - v1.0.5 (2017-09-22)
     - Upgraded `tough-cookie` to a version without regex DoS vulnerability
       *(Thanks to @rouanw and @sophieklm for their pull requests [request-promise#226](https://github.com/request/request-promise/pull/226) and [request-promise-native#13](https://github.com/request/request-promise-native/pull/13))*
