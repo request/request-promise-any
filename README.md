@@ -10,6 +10,13 @@
 [![Dependency Status](https://img.shields.io/david/request/request-promise-any.svg?style=flat-square&maxAge=2592000)](https://david-dm.org/request/request-promise-any)
 [![Known Vulnerabilities](https://snyk.io/test/npm/request-promise-any/badge.svg?style=flat-square&maxAge=2592000)](https://snyk.io/test/npm/request-promise-any)
 
+# Deprecated!
+
+As of Feb 11th 2020, [`request`](https://github.com/request/request) is fully deprecated. No new changes are expected to land. In fact, none have landed for some time.  
+This package is also deprecated because it depends on `request`.
+
+---
+
 This package is similar to [`request-promise`](https://www.npmjs.com/package/request-promise) but uses [`any-promise`](https://www.npmjs.com/package/any-promise) to let the user choose which Promise library to use.
 
 Please refer to the [`request-promise` documentation](https://www.npmjs.com/package/request-promise). Everything applies to `request-promise-any` except the following:
